@@ -145,23 +145,7 @@ def getMostPopularValues(year):
 
     return resultdictionary
                 
-                
-def someMoreDataAnalysis():
-    resultdictionary = getMostPopularValues('2018-abridged')
-    print(resultdictionary["OwnerZip"])
-    return '''
-Q1: What is the most popular zip code in the full 2018 data?
-A1: 42
-
-Q2: What is the most popular dog name in the full 2018 data?
-A2: 42
-
-Q3: What is the second-most-popular dog name in the full 2018 data?
-A3: 42
-
-Q4: What is the third-most-popular dog name in the full 2018 data?
-A4: 42
-'''        
+                      
     
     
         
@@ -389,9 +373,6 @@ def testGetMostPopularValues():
     print('Passed!')
 
 
-def testSomeMoreDataAnalysis():
-    someMoreDataAnalysis()
-    print('Skipping testing for someMoreDataAnalysis().  :-)')
 
 testReadDogDataCsvFileInto2dList()
 testConvert2dListToTable()
@@ -400,7 +381,6 @@ testGetCleanedTable()
 testGetValueSets()
 testGetValueCounts()
 testGetMostPopularValues()
-testSomeMoreDataAnalysis()
 
     
 
